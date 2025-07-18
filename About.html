@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile About Me</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    * {
+      box-sizing: border-box;
+    }
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Press Start 2P', cursive;
+      background-color: #7bcf7b;
+      color: black;
+    }
+    body {
+      background-image: url('IMG/Aboutpage.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    nav {
+      background-color: #7bcf34;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      font-size: 14px;
+    }
+    nav a {
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      user-select: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    main {
+      display: flex;
+      max-width: 1000px;
+      margin: 80px auto;
+      background: rgba(255 255 255 / 0.75);
+      border-radius: 16px;
+      padding: 32px;
+      gap: 48px;
+      align-items: center;
+    }
+    .profile-pic {
+      flex-shrink: 0;
+      width: 280px;
+      height: 280px;
+      border-radius: 32px;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgb(0 0 0 / 0.2);
+      background-color: #ccc;
+    }
+    .text-content {
+      flex-grow: 1;
+      font-size: 13px;
+      line-height: 1.5;
+      text-align: left;
+      color: black;
+      white-space: pre-wrap;
+    }
+
+    @media (max-width: 768px){
+      main {
+        flex-direction: column;
+        max-width: 90vw;
+        padding: 16px;
+      }
+      .profile-pic {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 24px;
+      }
+      .text-content {
+        font-size: 12px;
+      }
+      nav {
+        gap: 16px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="Home.html">Home</a>
+    <a href="About.html">About Me</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="Game.html">My Game</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+<main>
+    <img 
+      src="IMG/Profilepicture.jpeg" 
+      alt="Profile picture of Nik Imran Haziq"
+      class="profile-pic"
+    />
+    <div class="text-content">
+      Hi, I'm Nik Imran Haziq Bin Nik Amizan, a student currently pursuing a diploma in New Media Communication and Contentpreneurship at UiTM Alor Gajah. I'm passionate about digital content creation and deeply interested in the world of gaming.
+
+Having played a wide variety of games over the years, I've developed a strong desire to create my own game one day. With a blend of creativity, technical skills, and storytelling, I aim to bring engaging and meaningful experiences to the gaming world.
+
+Primary School - SK Seksyen 6
+Kota Damansara
+Highschool - SMK TIDI Jaya
+University - UiTM Alor Gajah
+  </div>
+  </main>
+</body>
+</html>

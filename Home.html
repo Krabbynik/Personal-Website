@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nik's Hobbies</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Press Start 2P', cursive;
+      background-color: black;
+      color: #ff8c4b;
+    }
+    nav {
+      background-color: #000000dd;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 50;
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+    }
+
+    nav a {
+      color: #ff8c4b;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffa76d;
+    }
+    .hero {
+      height: 100vh;
+	
+      background-image: url('IMG/Background website.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 72px;
+      box-sizing: border-box;
+      position: relative;
+      color: #ff8c4b;
+      text-shadow: 1px 1px 1px #000000aa;
+    }
+
+    .content-wrapper {
+      max-width: 900px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 90vw;
+	padding-left: 30px;
+		
+    }
+
+    .welcome-text {
+      font-size: 20px;
+      line-height: 1.4;
+      max-width: 350px;
+      white-space: pre-line;
+		padding: 0 30px;
+			
+    }
+
+    
+    .profile-circle {
+      width: 160px;
+      height: 160px;
+      border: 6px solid black;
+      border-radius: 50%;
+      background-color: #f9d29d;
+      box-shadow: 0 0 10px 2px #ff8c4b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      margin-bottom: 24px;
+      flex-shrink: 0;
+    }
+
+    .profile-circle img {
+      height: auto;
+      object-fit: fill;
+      image-rendering: pixelated;
+    }
+
+    .explore-button {
+      background-color: black;
+      border-radius: 9999px;
+      padding: 12px 32px;
+      color: #ff8c4b;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 0.9rem;
+      text-align: center;
+      box-shadow: 0 0 8px #ff8c4b;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+      user-select: none;
+      max-width: 160px;
+      margin: 0 auto;
+    }
+
+    .explore-button:hover,
+    .explore-button:focus {
+      background-color: #ff8c4b;
+      color: black;
+      outline: none;
+    }
+
+  
+    .right-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+   
+    @media (max-width: 768px) {
+      .content-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .welcome-text {
+        max-width: 100%;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .profile-circle {
+        width: 140px;
+        height: 140px;
+      }
+
+      .explore-button {
+        max-width: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="Home.html">HOME</a>
+    <a href="About.html">ABOUT ME</a>
+    <a href="Gallery.html">GALLERY</a>
+    <a href="Game.html">MY GAME</a>
+    <a href="#">CONTACT</a>
+  </nav>
+
+  <section class="hero" role="main" aria-label="Welcome to my gaming world homepage">
+    <div class="content-wrapper">
+      <div class="welcome-text" id="typing-text" aria-label="Welcome message">
+        WELCOME TO MY
+        <br />
+        GAMING WORLD
+      </div>
+
+      <div class="right-column" aria-label="Profile and exploration">
+        <div class="profile-circle" aria-label="Profile picture pixel art inside a circle">
+          <img 
+            src="IMG/Pixel art.jpeg" 
+            alt="Pixel art portrait of a character with dark hair and sunglasses waving" />
+        </div>
+        <button class="explore-button" aria-label="Explore more content"><a href="About.html">Explore More</a></button>
+      </div>
+    </div>
+  </section>
+	<script>
+  const text = "WELCOME TO MY\nGAMING WORLD";
+  const target = document.getElementById("typing-text");
+  let index = 0;
+
+  function typeWriter() {
+    if (index < text.length) {
+      if (text[index] === "\n") {
+        target.innerHTML += "<br/>";
+      } else {
+        target.innerHTML += text[index];
+      }
+      index++;
+      setTimeout(typeWriter, 50); // typing speed
+    } else {
+      setTimeout(() => {
+        target.innerHTML = "";
+        index = 0;
+        typeWriter(); // restart
+      }, 1500); // pause before restarting
+    }
+  }
+
+  window.onload = typeWriter;
+</script>
+</body>
+</html>

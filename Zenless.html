@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zenless Zone Zero Gameplay</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive, monospace;
+      background: url('IMG/zenless-zone-zero.webp') center center/cover no-repeat;
+      color: #2c2c2c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 32px 16px 48px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-family: 'Press Start 2P', cursive, monospace;
+      font-weight: 700;
+      font-size: 40px;
+      color: #161616;
+      text-shadow: 
+        3px 3px 0 #b5a575,
+        6px 6px 0 #b5a575;
+      margin-bottom: 32px;
+      user-select: none;
+    }
+
+    .video-container {
+      width: 80vw;
+      max-width: 960px;
+      aspect-ratio: 16 / 9;
+      border-radius: 40px;
+      overflow: hidden;
+      box-shadow: 0 12px 24px rgb(0 0 0 / 0.6);
+      margin-bottom: 48px;
+      position: relative;
+    }
+    .video-container video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 40px;
+    }
+
+    .thumbnail-overlay {
+      position: absolute;
+      top: 6.5%;
+      left: 6%;
+      width: 30%;
+      aspect-ratio: 4 / 3;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid #3a3a3a;
+      box-shadow: 2px 2px 8px rgb(0 0 0 / 0.7);
+    }
+    .thumbnail-overlay img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 12px;
+    }
+    .bottom-images {
+      width: 80vw;
+      max-width: 960px;
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+    }
+    .bottom-images .img-box {
+      flex: 1;
+      aspect-ratio: 16 / 9;
+      border-radius: 30px;
+      overflow: hidden;
+      background: #6b675f99;
+      border: 10px solid #6b675f99;
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.5);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .bottom-images .img-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 26px rgb(0 0 0 / 0.75);
+    }
+    .bottom-images img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 20px;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+</head>
+<body>
+	<div class="flex items-center justify-center gap-6 mb-8">
+  <a href="MarvelRivals.html">
+  <img src="IMG/Green arrow.jpg" alt="left arrow" class="w-12 sm:w-16 hover:scale-110 transition rotate-[270deg] bg-transparent border-none shadow-none"/>
+</a>
+  <h1 class="text-[3rem] sm:text-[4rem] text-center">Zenless Zone Zero Gameplay</h1>
+<a href="EldenRing.html">
+  <img src="IMG/Green arrow.jpg" alt="right arrow" class="w-12 sm:w-16 hover:scale-110 transition rotate-90 bg-transparent border-none shadow-none" />
+</a>
+</div>
+
+  <div class="video-container" aria-label="Gameplay video container">
+ <div id="ZZZgameplay">
+	  <a href="https://youtu.be/tcf2DpzI8HA" target="_blank" rel="noopener noreferrer"> 
+	 <img src="IMG/ThumbnailZZZ.jpg" alt="Yuzuha Miyabi Vivian combo">
+	 
+	 </a>
+	  
+	  </div>
+  </div>
+
+  <div class="bottom-images" aria-label="Gallery images section with three images in a row">
+    <div class="img-box">
+      <img src="IMGZ/ProfileZZZ.png" alt="Profile ZZZ"/>
+    </div>
+    <div class="img-box">
+      <img src="IMGZ/Jane Doe.png" alt="Jane Doe wipeout"/>
+    </div>
+    <div class="img-box">
+      <img src="IMGZ/Belle.png" alt="Belle"/>
+    </div>
+  </div>
+</body>
+</html>
+
+

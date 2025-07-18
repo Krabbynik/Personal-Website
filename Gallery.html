@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gallery</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+  body {
+    margin: 0;
+    background: url('IMG/Gallery.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    background: rgba(50, 50, 50, 0.75);
+    border-radius: 25px;
+    width: 700px;
+    max-width: 90vw;
+    padding: 20px 30px;
+  }
+
+  .profile-row {
+    display: flex;
+    align-items: center;
+    background: rgb(80,80,80);
+    border-radius: 25px;
+    margin: 10px 0;
+    padding: 15px 20px;
+  }
+
+  .profile-img-wrapper {
+    flex-shrink: 0;
+    width: 130px;
+    height: 130px;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    background: #222;
+    margin-right: 25px;
+  }
+
+  .profile-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    display: block;
+  }
+
+  .profile-text {
+    white-space: pre-line;
+    font-size: 18px;
+	  text-decoration: none
+  }
+	.profile-text:hover 
+	{
+		color: black;
+	    text-shadow: 0 0 5px #ff7744;
+	}
+.home-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #ff7744;
+  font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
+  z-index: 999;
+}
+
+.home-button:hover {
+  color: #ffaa88;
+  text-shadow: 0 0 5px #ff7744;
+}
+  
+  @media (max-width: 600px) {
+    body {
+      padding: 20px;
+    }
+    .container {
+      width: 100%;
+      padding: 15px 20px;
+    }
+    .profile-row {
+      flex-direction: column;
+      text-align: center;
+    }
+    .profile-img-wrapper {
+      margin-right: 0;
+      margin-bottom: 15px;
+      width: 110px;
+      height: 110px;
+      border-radius: 35px;
+    }
+	  
+  }
+</style>
+</head>
+<body>
+  <a href="Home.html" class="home-button">HOME</a>
+  <div class="container">
+    <div class="profile-row">
+      <div class="profile-img-wrapper">
+        <img src="IMG/Zenless.jpeg" alt="Zenless Zone Zero" />
+      </div>
+      <div class="profile-text">
+		  <a href="Zenless.html" alt="ZenlessZoneZero" >ZENLESS ZONE ZERO</a>
+		</div>
+    </div>
+
+    <div class="profile-row">
+      <div class="profile-img-wrapper">
+        <img src="IMG/EldenRing.webp" alt="EldenRing" />
+      </div>
+      <div class="profile-text">
+		  <a href="EldenRing.html" alt="EldenRing" > ELDEN RING:Shadow of the erdtree</a>
+		</div>
+    </div>
+
+    <div class="profile-row">
+      <div class="profile-img-wrapper">
+        <img src="IMG/Honkai_Star_Rail.webp" alt="Honkai Star Rail" />
+      </div>
+      <div class="profile-text">
+		  <a href="HonkaiStarRail.html">HONKAI STAR RAIL</a>
+		</div>
+    </div>
+
+    <div class="profile-row">
+      <div class="profile-img-wrapper">
+        <img src="IMG/Valorant.jpg" alt="Valorant" />
+      </div>
+      <div class="profile-text">
+		  <a href="Valorant.html" alt="Valorant">VALORANT</a>
+		</div>
+    </div>
+
+    <div class="profile-row">
+      <div class="profile-img-wrapper">
+        <img src="IMG/Marvel Rivals.png" alt="Marvel Rivals" />
+      </div>
+      <div class="profile-text">
+		<a href="MarvelRivals.html" alt="Marvel Rivals">MARVEL RIVALS</a>
+		</div>
+    </div>
+  </div>
+</body>
+</html>
+
